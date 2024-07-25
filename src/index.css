@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: PassionOne;
+    src: url(/src/assets/PassionOne-Black.ttf);
+}
+
+@font-face {
+    font-family: Masiva;
+    src: url(/src/assets/Fontspring-DEMO-masiva_bold.otf);
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none;
+    color: #f3b6c5;
+    transition: all 0.3s ease;
+}
+.custom-size {
+    font-size: 20px; 
+}
+
+.logo{
+    animation: spin 7s linear  infinite;
+}
+
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.Hero-Text{
+    font-family: PassionOne;
+    font-size: 13vh;
+    line-height: 12vh;
+    color: #1355a3;
+}
+
+.Hero-Subtext{
+    color: #1355a3;
+    font-size: large;
+    font-weight: 500;
+}
+
+.Hero-Para{
+    color: #1355a3;
+}
+
+.Hero-Buttontext{
+    font-family: Masiva;
+}
