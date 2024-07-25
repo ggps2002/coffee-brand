@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <div className='bg-[#f3b6c5] h-screen w-screen'>
         <Navbar/>
-        <div className='flex justify-end gap-[15vw] mt-[10vh] '>
-            <div >
+        <div className='flex justify-end gap-[15vw] mt-[10vh] xs:flex-col md:flex-row'>
+            <div className='px-[5vw]'>
                 <div>
                     <h1 className='Hero-Text tracking-wider'>
                         Pretty<br/>
@@ -20,7 +20,7 @@ const Hero = () => {
                         Lorem Ipsum this is some para about the coffee bean brand <br/>
                         potraying its authenticity and the true essence of coffee 
                     </p>
-                    <button className='h-[5vh] w-[13vw] bg-[#1355a3] mt-10 rounded-3xl text-white text-[3vh]'>
+                    <button className='h-[5vh] px-[6vw] bg-[#1355a3] mt-10 rounded-3xl text-white text-[3vh]'>
                         Get it now
                     </button>
                 </div>
