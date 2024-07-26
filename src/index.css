@@ -12,6 +12,10 @@
     src: url(/src/assets/Fontspring-DEMO-masiva_bold.otf);
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .social-icon {
     display: flex;
     justify-content: center;
@@ -30,7 +34,7 @@
 }
 
 .logo{
-    animation: spin 7s linear  infinite;
+    animation: spin 7s linear 2s infinite ;
 }
 
 @keyframes spin {
