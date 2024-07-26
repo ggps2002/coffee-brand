@@ -4,7 +4,7 @@ import HeroImage from '../assets/heroImage.png'
 
 const Hero = () => {
     return (
-            <div  className='bg-[#f3b6c5] min-h-screen w-screen '>
+            <div data-scroll data-scroll-section data-scroll-speed="-.5" className='bg-[#f3b6c5] min-h-screen w-screen '>
                 <Navbar />
                 <div className='flex justify-end gap-[15vw] mt-[10vh] xs:flex-col md:flex-row'>
                     <div className='px-[5vw]'>

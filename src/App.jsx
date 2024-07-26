@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import About from './components/About';
 import { easeInOut, motion } from 'framer-motion'
+import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
   const [loading, setLoading] = useState(0);
   const [isVisible, setIsVisible] = useState(false)
   const [isHeroVisible, setIsHeroVisible] = useState(false)
