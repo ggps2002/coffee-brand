@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import About from './components/About';
+import Products from './components/Products';
 import { easeInOut, motion } from 'framer-motion'
 import LocomotiveScroll from 'locomotive-scroll';
 
@@ -44,6 +45,7 @@ const App = () => {
             <motion.div animate={{ scale: [0.7, 1] }} transition={{ ease: easeInOut, duration: 1, delay: 2 }}>
               <Hero />
               {isVisible && <About />}
+              {isVisible && <Products />}
             </motion.div>
           </motion.div>
         )

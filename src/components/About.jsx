@@ -8,8 +8,8 @@ const About = () => {
   const x = useTransform(scrollYProgress, [0, 1], [0, -700]);
   const containerRef = useRef(null);
   const text1 = 'We are';
-  const text2 = 'Authentic';
-
+  const text2 = 'Authentic and';
+  const text3 = 'Sustainable.'
   // Custom hook for managing multiple refs
   const useArrayRef = () => {
     const lettersRef = useRef([]);
@@ -29,11 +29,11 @@ const About = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           scrub: true,
-          start: "top 60%",
-          end: "top 35%",
+          start: "top 70%",
+          end: "top 10%",
         },
-        opacity: 1,
-        duration: 5,
+        color: "#f3b6c5",
+        duration: 6,
         stagger: 1,
       }
     );
@@ -65,10 +65,13 @@ const About = () => {
       </div>
       <div ref={triggerRef} className='About-Text p-[2vw]'>
         {text1.split("").map((letter, index) => (
-          <span key={index} ref={setLettersRef} style={{ opacity: 0 }}>{letter}</span>
+          <span key={index} ref={setLettersRef} >{letter}</span>
         ))}<br />
         {text2.split("").map((letter, index) => (
-          <span key={index} ref={setLettersRef} style={{ opacity: 0 }}>{letter}</span>
+          <span key={index} ref={setLettersRef} >{letter}</span>
+        ))}<br/>
+        {text3.split("").map((letter,index) => (
+          <span key={index} ref={setLettersRef}>{letter}</span>
         ))}
       </div>
       <div ref={containerRef} className='About-Subtext mt-5 px-[2vw]'>
