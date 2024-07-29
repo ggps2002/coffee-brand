@@ -24,7 +24,7 @@ const App = () => {
     },4500)
     const heroTimer = setTimeout(()=>{
       setIsHeroVisible(true)
-    },1400)
+    },1500)
     return () => {
       clearInterval(interval)
       clearTimeout(timer)
@@ -36,7 +36,7 @@ const App = () => {
     <div className={` bg-[#1355a3] w-screen min-h-screen h-auto `}>
       {
         !isHeroVisible ? (
-          <motion.div animate={{opacity:0}} transition={{delay:1.2}} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+          <motion.div animate={{opacity:0}} transition={{delay:1.2, duration:0.5}} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
             <h1 className='text-white text-[5vw]'> {loading}% Loading</h1>
           </motion.div>
         ) : (
