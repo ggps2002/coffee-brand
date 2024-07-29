@@ -29,7 +29,7 @@ const About = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           scrub: true,
-          start: "top 65%",
+          start: "top 60%",
           end: "top 35%",
         },
         opacity: 1,
