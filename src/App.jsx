@@ -34,7 +34,7 @@ const App = () => {
 
   }, []);
   return (
-    <div className={` bg-[#1355a3] w-screen min-h-screen h-auto `}>
+    <div className={` bg-[#1355a3] w-screen min-h-screen `}>
       {
         !isHeroVisible ? (
           <motion.div animate={{opacity:0}} transition={{delay:1.2, duration:0.5}} className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
